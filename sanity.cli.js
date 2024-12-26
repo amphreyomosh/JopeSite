@@ -11,3 +11,4 @@ export default defineCliConfig({
    */
   autoUpdates: true,
 })
+

@@ -1,0 +1,146 @@
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 50px;
+  margin: 50px 0;
+  min-height: 100vh;
+}
+
+/* General reset for the page */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #99971d;
+  overflow-x: hidden;
+}
+
+/* Style for the navigation bar */
+nav {
+  position: fixed; /* Fixed position at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make it span the full width of the screen */
+  z-index: 1000; /* Ensure it's on top of other content */
+  padding: 10px 0;
+  display: flex;
+  background-color: rgba(153, 151, 29, 0.5); /* 0.5 makes it 50% transparent */
+  justify-content: space-around;
+  transition:
+    background-color 0.3s,
+    opacity 0.3s; /* Smooth transition for background and opacity */
+  backdrop-filter: blur(10px); /* Blur effect behind the navbar */
+}
+
+/* Style for the navigation list */
+nav ul {
+  display: flex; /* Display items in a row */
+  justify-content: center; /* Center the links */
+  list-style: none; /* Remove the default bullet points */
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for each navigation item */
+nav ul li {
+  margin: 40px 40px; /* Spacing between items */
+}
+
+/* Style for the links */
+nav ul li a {
+  color: black; /* White text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 15px; /* Set font size */
+  letter-spacing: 1px; /* Add space between letters */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Add some space at the top of the page for content */
+section {
+  margin-top: 60px; /* Ensure content is not hidden under the fixed navbar */
+  padding: 30px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 100px 20px;
+  margin-top: 60px; /* Ensure the content is not hidden under the fixed navbar */
+  transition:
+    opacity 0.3s,
+    filter 0.3s; /* Smooth transition for opacity and blur */
+}
+
+#logo {
+  width: 80px;
+  height: 70px;
+  margin-left: -200px;
+  margin-top: 30px;
+}
+/*homepage styling for large screens*/
+
+.homeHeader {
+  display: flex;
+  justify-content: center;
+}
+.headerOne {
+  font-size: 220px;
+  font-weight: 900;
+  line-height: 15rem;
+  transform: translate(210px, -80px);
+  z-index: 2;
+  #heroheaderOne {
+    color: white;
+  }
+  #on {
+    text-shadow: 6px 6px 6px black;
+  }
+}
+
+#on {
+  animation: bounce2 2s ease 3s;
+}
+@keyframes bounce2 {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-40px);
+  }
+  60% {
+    transform: translateY(-20px);
+  }
+}
+#heroimage {
+  width: 900px;
+  height: 900px;
+  transform: translate(-10px, 350px);
+  border-radius: 50%;
+  filter: brightness(1.2) contrast(1.3);
+  image-rendering: auto;
+}
+
+.heroparagraph {
+  font-size: 2.5rem;
+  transform: translate(50px, -180px);
+}
+#btn-hireme {
+  transform: translate(50px, -170px);
+  height: 50px;
+  width: 160px;
+}
+
+/*styling about page on large screen*/
+#about {
+  margin-top: -250px;
+  transform: translateX(50px);
+  margin-right: 100px;
+}
+#top-content{
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
